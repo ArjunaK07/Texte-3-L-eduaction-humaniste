@@ -16,6 +16,17 @@ h1 {
   text-align: center;
 }
 
+.navigation{
+border-radius: 5px; height: 50px;
+}
+.navigation_bar{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 30px;
+  justify-content: center;
+  padding: 10px;
+}
+
 .page{
   background-color: rgb(57, 57, 57);
   margin-left: 0px;
@@ -120,28 +131,7 @@ padding-right: 20px;
   opacity: 0;
   transition: opacity 0.3s;
 }
-
-.tooltip .tooltiptext2 {
-  vertical-align: center;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
-  visibility: hidden;
-  width: 750px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
+        
 .tooltip .tooltiptext::after {
   position: absolute;
   top: 100%;
@@ -170,22 +160,27 @@ padding-right: 20px;
           séquence 1 Séance 5 : Lecture linéaire d'un extrait du chapitre 23 de Gargantua (l'éducation humaniste)
            </p>
 
-           <marquee>
-            <button style="display: block; background-color: orangered; border: none; border-radius: 5px; height: 30px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
-              <a href="https://arjunak07.github.io/Texte-1-La-Naissance-de-Gargantua/">
-                TEXTE 1
-              </a>
-             </button>
-           </marquee>
+<div class="navigation_bar">
 
-           <marquee>
-            <button style="display: block; background-color: goldenrod; border: none; border-radius: 5px; height: 30px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
-              <a href="https://arjunak07.github.io/Texte-2-L-eduaction-de-Gargantua/">
-                TEXTE 2
-              </a>
-             </button>
-           </marquee>
-           
+            <div>
+            <a href="https://arjunak07.github.io/Texte-3-L-eduaction-humaniste/">
+              <img class="navigation" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/revenir.png">
+            </a>
+           </div>
+
+           <div>
+            <a href="https://arjunak07.github.io/Reccueil-des-textes/">
+              <img class="navigation" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/menu%20logo.png">
+            </a>
+           </div>
+
+           <div>
+            <a href="https://arjunak07.github.io/Texte-4-Candide/">
+              <img class="navigation" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/prochain.png">
+            </a>
+           </div>
+
+           </div>     
 
            </br>
 
