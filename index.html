@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <style>
         body{
             background-color: #282828;
             display: block;
         }
 h1 {
-  color: rgb(255, 84, 84);
-  background-color: rgb(255, 206, 80);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255,  84,  84);
+  background-color: rgb(255,  206,  80);
+  font-family:Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
   text-align: center;
 }
 
 .navigation{
 border-radius: 5px; height: 50px;
 }
+
 .navigation_bar{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -28,28 +29,21 @@ border-radius: 5px; height: 50px;
 }
 
 .page{
-  background-color: rgb(57, 57, 57);
-  margin-left: 0px;
-  margin-right: 0px;
+  background-color: rgb(57,  57,  57);
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 10px;
 }
-@media screen and (min-width:750px) {
-            .page {
-               margin-left: 250px;
-               margin-right: 250px;
-               margin-top: 0px;
-               margin-bottom: 0px;
-            }
-        }
+
 .intro{
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
 color: coral; 
 font-size: 25px;
 }
 p{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman',  Times,  serif;
     font-size: 30px;
 }
 img{
@@ -58,32 +52,25 @@ img{
 .img2{
     height: 300px;
 }
-.div1{
-grid-column: 1;
-grid-row: 1;
-margin-left: 0px;
-margin-top: 10px;
-}
-.div2{
-width: 400px;
-padding-right: 20px;
-}
+
 .titre{
-  color: rgb(255, 133, 93);
-  background-color: rgb(2, 100, 186);
+  color: rgb(255,  133,  93);
+  background-color: rgb(2,  100,  186);
   padding: 5px;
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana,  Geneva,  Tahoma,  sans-serif;
 }
 .texte{
-  color:aliceblue
+  color:aliceblue;
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 25px;
 }
 .légende{
   color: bisque;
   font-weight: bold;
 }
 .outro{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
   font-size: 25px;
   color: crimson;
 }
@@ -93,15 +80,13 @@ padding-right: 20px;
   color: aqua; 
   background-color: coral; 
   font-weight: bold; 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS',  'Lucida Sans Unicode',  'Lucida Grande',  'Lucida Sans',  Arial,  sans-serif;
 }
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
-  text-align: center;
-  height: 30px; 
-  font-family:'Times New Roman', Times, serif;
+  text-align: justify;
+  font-family:'Times New Roman',  Times,  serif;
   font-size: 25px;
   border: none;
   border-radius: 5px;
@@ -109,50 +94,49 @@ padding-right: 20px;
   background-color: whitesmoke;
   color: brown;
   font-weight: bold;
+  margin: 3px;
+  padding: 3px;
+
 }
 
 .tooltip .tooltiptext {
-  vertical-align: center;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
   visibility: hidden;
-  width: 750px;
-  background-color: #555;
+  background-color: rgb(80, 80, 80);
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext2 {
-  vertical-align: center;
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
-  visibility: hidden;
-  width: 750px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  min-width: 500px;
+  max-width: 550px;
   left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
+	transform: translateX(-25%);
+  justify-content: center;
 }
 
+.div1{
+width: auto;
+height: auto;
+position: static;
+padding: 5px;
+}
+img {
+  height: 150px;
+  width: auto;
+}
+.div2{
+min-width: 500px;
+max-width: 550px;
+height: auto;
+position: static;
+margin-top: 10px ;
+
+}
 .tooltip .tooltiptext::after {
   position: absolute;
   top: 100%;
@@ -161,11 +145,13 @@ padding-right: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+  opacity: 0.4;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+
 }
 .logo_akatsuki{
   height: 50px;
@@ -173,7 +159,7 @@ padding-right: 20px;
 }
 .OUTRO
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
     font-size: 20px;
     color: aliceblue;
 }
@@ -182,12 +168,57 @@ padding-right: 20px;
   grid-template-columns: 3em 9fr ;
   grid-gap: 10px;
 }
-.div2{
+
+.outro_div{
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 5px;
   width: 100%;
 }
 
+@media screen and (max-width:750px) {
+            .page {
+               margin-left: 0px;
+               margin-right: 0px;
+               margin-top: 0px;
+               margin-bottom: 0px;
+            }
+            .tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  max-width: 250px;
+  left: 50%;
+	transform: translateX(-25%);
+}
+
+.div1{
+width: 300px;
+max-height: 300px;
+position: static;
+padding: 5px;
+}
+img{
+  max-width: 250px;
+  max-height: 150px;
+}
+.div2{
+max-width: 250px;
+height: auto;
+position: static;
+margin-top: 10px ;
+background-color: aquamarine;
+
+}
+}
     </style>
     
     <title>Texte 3 : L'éducation humaniste de G </title>
@@ -251,42 +282,42 @@ padding-right: 20px;
                      III/ (1.18-24) L'exercice de toutes les facultés ? </br>
           </p>
 
- <p class="texte">
+ <div class="texte">
     
-<button class="tooltip"> Pour mieux <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/one%20piece.jpg"></div><div class="div2"> Série de compléments circonstanciels de but de lieu et de manière. L'éducation de Gargantua est corrigée : un objectif est assigné, un nouvel environnement est défini. </div></span></button>
+<div class="tooltip"> Pour mieux <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/one%20piece.jpg"></div><div class="div2"> Série de compléments circonstanciels de but de lieu et de manière. L'éducation de Gargantua est corrigée : un objectif est assigné, un nouvel environnement est défini. </div></span></div>
 
 réussir,
 
-<button class="tooltip"> il l’introduisit dans les milieux de gens savants <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/avant%20après.jpg"></div>  <div class="div2">  Cette éducation entre en rupture avec la première éducation reçue par Gargantua. </div></span></button>
+<div class="tooltip"> il l’introduisit dans les milieux de gens savants <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/avant%20après.jpg"></div>  <div class="div2">  Cette éducation entre en rupture avec la première éducation reçue par Gargantua. </div></span></div>
 
 qui se trouvaient dans les environs ; par 
 
-<button class="tooltip" style="background-color: rgb(200, 52, 245); color: rgb(255, 171, 60);"> émulation <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/partager.jpg"></div><div class="div2">Le savoir (« l'esprit ») est associé à l'ouverture aux autres et à l'envie de les imiter (« désir/ émulation ») pour partager leurs connaissances. </div></span></button>
+<div class="tooltip" style="background-color: rgb(200, 52, 245); color: rgb(255, 171, 60);"> émulation <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/partager.jpg"></div><div class="div2">Le savoir (« l'esprit ») est associé à l'ouverture aux autres et à l'envie de les imiter (« désir/ émulation ») pour partager leurs connaissances. </div></span></div>
 
 se développèrent en lui 
 
-<button class="tooltip" style="background-color: rgb(200, 52, 245); color: rgb(255, 171, 60);"> l’esprit <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/partager.jpg"></div><div class="div2"> Le savoir (« l'esprit ») est associé à l'ouverture aux autres et à l'envie de les imiter (« désir/ émulation ») pour partager leurs connaissances. </div></span></button>
+<div class="tooltip" style="background-color: rgb(200, 52, 245); color: rgb(255, 171, 60);"> l’esprit <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/partager.jpg"></div><div class="div2"> Le savoir (« l'esprit ») est associé à l'ouverture aux autres et à l'envie de les imiter (« désir/ émulation ») pour partager leurs connaissances. </div></span></div>
 
 ainsi que 
 
-<button class="tooltip" style="background-color: rgb(200, 52, 245); color: rgb(255, 171, 60);"> le désir <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/partager.jpg"></div><div class="div2">Le savoir (« l'esprit ») est associé à l'ouverture aux autres et à l'envie de les imiter (« désir/ émulation ») pour partager leurs connaissances. </div></span></button>
+<div class="tooltip" style="background-color: rgb(200, 52, 245); color: rgb(255, 171, 60);"> le désir <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/partager.jpg"></div><div class="div2">Le savoir (« l'esprit ») est associé à l'ouverture aux autres et à l'envie de les imiter (« désir/ émulation ») pour partager leurs connaissances. </div></span></div>
 
  d’étudier autrement, tout en se 
 
- <button class="tooltip">  mettant en valeur  <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/s'accomplir%20humaineemnt.jpg"></div><div class="div2">  Cette éducation permet de s'accomplir humainement « en se mettant en valeur ».
-</div></span></button>
+ <div class="tooltip">  mettant en valeur  <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/s'accomplir%20humaineemnt.jpg"></div><div class="div2">  Cette éducation permet de s'accomplir humainement « en se mettant en valeur ».
+</div></span></div>
  .
 
 
 
 Ensuite, Ponocrates le soumit à 
 
-<button class="tooltip"> un tel <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/goku.jpg"></div><div class="div2">  Subordonnée corrélative de conséquence. Le nouveau précepteur de Gargantua est mis en valeur: il organise l'emploi du temps du géant et refuse toute oisiveté.
-</div></span></button>
+<div class="tooltip"> un tel <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/goku.jpg"></div><div class="div2">  Subordonnée corrélative de conséquence. Le nouveau précepteur de Gargantua est mis en valeur: il organise l'emploi du temps du géant et refuse toute oisiveté.
+</div></span></div>
 
 rythme d’étude que Gargantua ne perdait pas une seule heure de la journée mais 
 
-<button class="tooltip"> qu’il consacrait tout son temps aux belles-lettres et à l’honnête savoir <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/humanisme.jpg"></div><div class="div2"> Eloge du savoir qui associe ici grands textes et morale. Le contenu de l'apprentissage est enfin précisé. Il renvoie au savoir défendu par les humanistes. </div></span></button>
+<div class="tooltip"> qu’il consacrait tout son temps aux belles-lettres et à l’honnête savoir <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/humanisme.jpg"></div><div class="div2"> Eloge du savoir qui associe ici grands textes et morale. Le contenu de l'apprentissage est enfin précisé. Il renvoie au savoir défendu par les humanistes. </div></span></div>
 .
 
 </br> </br>
@@ -297,69 +328,69 @@ rythme d’étude que Gargantua ne perdait pas une seule heure de la journée ma
 
 Gargantua s’éveillait donc 
 
-<button class="tooltip" style="background-color: rgb(245, 52, 52); color: rgb(255, 171, 60);"> vers quatre heures du matin <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/emploi%20du%20temps.jpg"></div><div class="div2"> Indications temporelles, la chronologie est appuyée par la proposition subordonnée de temps; verbes conjugués exclusivement à l'imparfait. L'emploi du temps de Gargantua est parfaitement structuré. De nouvelles habitudes sont mis en place. </div></span></button>
+<div class="tooltip" style="background-color: rgb(245, 52, 52); color: rgb(255, 171, 60);"> vers quatre heures du matin <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/emploi%20du%20temps.jpg"></div><div class="div2"> Indications temporelles, la chronologie est appuyée par la proposition subordonnée de temps; verbes conjugués exclusivement à l'imparfait. L'emploi du temps de Gargantua est parfaitement structuré. De nouvelles habitudes sont mis en place. </div></span></div>
 
 .
 
-<button class="tooltip" style="background-color: rgb(245, 52, 52); color: rgb(255, 171, 60);"> Pendant qu’on le frictionnait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/emploi%20du%20temps.jpg"></div><div class="div2"> Indications temporelles, la chronologie est appuyée par la proposition subordonnée de temps; verbes conjugués exclusivement à l'imparfait. L'emploi du temps de Gargantua est parfaitement structuré. De nouvelles habitudes sont mis en place. </div></span></button>
+<div class="tooltip" style="background-color: rgb(245, 52, 52); color: rgb(255, 171, 60);"> Pendant qu’on le frictionnait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/emploi%20du%20temps.jpg"></div><div class="div2"> Indications temporelles, la chronologie est appuyée par la proposition subordonnée de temps; verbes conjugués exclusivement à l'imparfait. L'emploi du temps de Gargantua est parfaitement structuré. De nouvelles habitudes sont mis en place. </div></span></div>
 
 
 
 , quelqu’un lui lisait 
 
-<button class="tooltip"> une page des Saintes Ecritures <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/texte%20religieux.jpg"></div><div class="div2"> Les textes religieux constituent le socle du savoir. Ils doivent être compris du géant. </div></span></button>
+<div class="tooltip"> une page des Saintes Ecritures <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/texte%20religieux.jpg"></div><div class="div2"> Les textes religieux constituent le socle du savoir. Ils doivent être compris du géant. </div></span></div>
 
 , à voix 
 
-<button class="tooltip" style="background-color: brown; color: burlywood;"> haute <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mettre%20en%20valeur.jpg"></div><div class="div2"> Utilisation d'adjectifs dont le sens mélioratif met en valeur les texte sacrés. </div></span></button>
+<div class="tooltip" style="background-color: brown; color: burlywood;"> haute <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mettre%20en%20valeur.jpg"></div><div class="div2"> Utilisation d'adjectifs dont le sens mélioratif met en valeur les texte sacrés. </div></span></div>
 
 et 
 
-<button class="tooltip" style="background-color: brown; color: burlywood;"> claire <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mettre%20en%20valeur.jpg"></div><div class="div2"> Utilisation d'adjectifs dont le sens mélioratif met en valeur les texte sacrés. </div></span></button>
+<div class="tooltip" style="background-color: brown; color: burlywood;"> claire <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mettre%20en%20valeur.jpg"></div><div class="div2"> Utilisation d'adjectifs dont le sens mélioratif met en valeur les texte sacrés. </div></span></div>
 
 , avec la diction 
 
-<button class="tooltip" style="background-color: brown; color: burlywood;"> adéquate <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mettre%20en%20valeur.jpg"></div><div class="div2"> Utilisation d'adjectifs dont le sens mélioratif met en valeur les texte sacrés.  </div></span></button>
+<div class="tooltip" style="background-color: brown; color: burlywood;"> adéquate <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mettre%20en%20valeur.jpg"></div><div class="div2"> Utilisation d'adjectifs dont le sens mélioratif met en valeur les texte sacrés.  </div></span></div>
 
 . 
 
 A cette tâche était affecté un jeune page natif de Basché, du nom d’
 
-<button class="tooltip"> Anagnostes <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/angnostes.jpg"></div><div class="div2"> Le nom du jeune noble chargé de faire la lecture à Gargantua signifie « lecteur » en grec. Cette onomastique est un clin d'œil humaniste à l'antiquité. Le précepteur est mis en valeur : il lit, fait lire et enseigne la lecture. Il correspond à l'idéal du maître humaniste. Il est un transmetteur de savoir </div></span></button>
+<div class="tooltip"> Anagnostes <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/angnostes.jpg"></div><div class="div2"> Le nom du jeune noble chargé de faire la lecture à Gargantua signifie « lecteur » en grec. Cette onomastique est un clin d'œil humaniste à l'antiquité. Le précepteur est mis en valeur : il lit, fait lire et enseigne la lecture. Il correspond à l'idéal du maître humaniste. Il est un transmetteur de savoir </div></span></div>
 
 . 
 
 Selon le 
 
-<button class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> thème <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></button>
+<div class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> thème <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></div>
 
 de 
 
-<button class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> l’argument <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></button>
+<div class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> l’argument <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></div>
 
 de cette 
 
-<button class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> leçon <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></button>
+<div class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> leçon <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></div>
 
 , souvent Gargantua se consacrait à 
 
-<button class="tooltip"> révérer, adorer, prier et supplier <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/indisociabel.gif"></div><div class="div2"> L'énumération de verbes à l'infinitif insiste sur l'idée que chez les humanistes, le savoir est indissociable de la morale et de la religion. </div></span></button>
+<div class="tooltip"> révérer, adorer, prier et supplier <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/indisociabel.gif"></div><div class="div2"> L'énumération de verbes à l'infinitif insiste sur l'idée que chez les humanistes, le savoir est indissociable de la morale et de la religion. </div></span></div>
 
 le bon 
 
-<button class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> Dieu <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></button>
+<div class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> Dieu <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></div>
 
 dont la 
 
-<button class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> lecture <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></button>
+<div class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> lecture <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></div>
 
 montrait la 
 
-<button class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> majesté <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></button>
+<div class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> majesté <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></div>
 
 et les 
 
-<button class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> jugements <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></button>
+<div class="tooltip" style="background-color: rgb(106, 42, 165); color: rgb(135, 222, 135);"> jugements <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/pédagogie.jpg"></div><div class="div2"> Le champ lexical de la pédagogie (« thème/argument/ leçon/ lecture ») côtoie encore, celui mélioratif, de la religion (Dieu/ majesté/ jugements »). </div></span></div>
 
 merveilleux. 
 
@@ -367,63 +398,63 @@ merveilleux.
 
 Puis il se  
 
-<button class="tooltip" style="background-color: rgb(2, 3, 77); color: rgb(255, 153, 29);"> retirait aux lieux d’aisance
-  <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rire%20savoir.jpg"></div><div class="div2"> Effet comique de la confrontation entre les besoins de Gargantua et la hauteur de la réflexion mise en valeur par les superlatifs. Le rire semble renvoyer au bas corporel, tandis que le savoir et la réflexion sont à mettre en rapport avec la tête. Mais ici, rire et savoir sont intimement liés : Rabelais n'oppose pas le haut et le bas du corps. </div></span></button>
+<div class="tooltip" style="background-color: rgb(2, 3, 77); color: rgb(255, 153, 29);"> retirait aux lieux d’aisance
+  <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rire%20savoir.jpg"></div><div class="div2"> Effet comique de la confrontation entre les besoins de Gargantua et la hauteur de la réflexion mise en valeur par les superlatifs. Le rire semble renvoyer au bas corporel, tandis que le savoir et la réflexion sont à mettre en rapport avec la tête. Mais ici, rire et savoir sont intimement liés : Rabelais n'oppose pas le haut et le bas du corps. </div></span></div>
 
 pour se 
 
-<button class="tooltip" style="background-color: rgb(2, 3, 77); color: rgb(255, 153, 29);"> purger de ses excréments naturels <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rire%20savoir.jpg"></div><div class="div2"> Effet comique de la confrontation entre les besoins de Gargantua et la hauteur de la réflexion mise en valeur par les superlatifs. Le rire semble renvoyer au bas corporel, tandis que le savoir et la réflexion sont à mettre en rapport avec la tête. Mais ici, rire et savoir sont intimement liés : Rabelais n'oppose pas le haut et le bas du corps. </div></span></button>
+<div class="tooltip" style="background-color: rgb(2, 3, 77); color: rgb(255, 153, 29);"> purger de ses excréments naturels <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rire%20savoir.jpg"></div><div class="div2"> Effet comique de la confrontation entre les besoins de Gargantua et la hauteur de la réflexion mise en valeur par les superlatifs. Le rire semble renvoyer au bas corporel, tandis que le savoir et la réflexion sont à mettre en rapport avec la tête. Mais ici, rire et savoir sont intimement liés : Rabelais n'oppose pas le haut et le bas du corps. </div></span></div>
 
 . Là son précepteur répétait ce qui avait été lu en lui 
 
-<button class="tooltip" style="background-color: rgb(2, 3, 77); color: rgb(255, 153, 29);"> expliquant les points les plus obscurs et difficiles <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rire%20savoir.jpg"></div><div class="div2"> Effet comique de la confrontation entre les besoins de Gargantua et la hauteur de la réflexion mise en valeur par les superlatifs. Le rire semble renvoyer au bas corporel, tandis que le savoir et la réflexion sont à mettre en rapport avec la tête. Mais ici, rire et savoir sont intimement liés : Rabelais n'oppose pas le haut et le bas du corps. </div></span></button>
+<div class="tooltip" style="background-color: rgb(2, 3, 77); color: rgb(255, 153, 29);"> expliquant les points les plus obscurs et difficiles <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rire%20savoir.jpg"></div><div class="div2"> Effet comique de la confrontation entre les besoins de Gargantua et la hauteur de la réflexion mise en valeur par les superlatifs. Le rire semble renvoyer au bas corporel, tandis que le savoir et la réflexion sont à mettre en rapport avec la tête. Mais ici, rire et savoir sont intimement liés : Rabelais n'oppose pas le haut et le bas du corps. </div></span></div>
 
 . 
 
 </br> </br>
 
-<button class="tooltip"> Cela fait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/ancien%20nouveau.jpg"></div><div class="div2"> Indication temporelle. Le narrateur insiste sur les étapes logiques de l'éducation du géant: à chaque paragraphe correspond une nouvelle étape dans son éducation </div></span></button>
+<div class="tooltip"> Cela fait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/ancien%20nouveau.jpg"></div><div class="div2"> Indication temporelle. Le narrateur insiste sur les étapes logiques de l'éducation du géant: à chaque paragraphe correspond une nouvelle étape dans son éducation </div></span></div>
 
 , 
 
 Gargantua était 
 
-<button class="tooltip" style="background-color: rgb(168, 63, 145); color: rgb(29, 183, 255);"> habillé, peigné, coiffé, tiré <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/hygiène.jpg"></div><div class="div2"> L'accumulation de participes passés à la mesure de Gargantua montre que l'hygiène corporelle est associée à l'hygiène morale. L'hygiène devient un signe d'humanité : Gargantua grandit aussi dans ce sens. </div></span></button>
+<div class="tooltip" style="background-color: rgb(168, 63, 145); color: rgb(29, 183, 255);"> habillé, peigné, coiffé, tiré <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/hygiène.jpg"></div><div class="div2"> L'accumulation de participes passés à la mesure de Gargantua montre que l'hygiène corporelle est associée à l'hygiène morale. L'hygiène devient un signe d'humanité : Gargantua grandit aussi dans ce sens. </div></span></div>
 
 à quatre épingles et 
 
-<button class="tooltip" style="background-color: rgb(168, 63, 145); color: rgb(29, 183, 255);"> parfumé <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/hygiène.jpg"></div><div class="div2"> L'accumulation de participes passés à la mesure de Gargantua montre que l'hygiène corporelle est associée à l'hygiène morale. L'hygiène devient un signe d'humanité : Gargantua grandit aussi dans ce sens. </div></span></button>
+<div class="tooltip" style="background-color: rgb(168, 63, 145); color: rgb(29, 183, 255);"> parfumé <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/hygiène.jpg"></div><div class="div2"> L'accumulation de participes passés à la mesure de Gargantua montre que l'hygiène corporelle est associée à l'hygiène morale. L'hygiène devient un signe d'humanité : Gargantua grandit aussi dans ce sens. </div></span></div>
 .
 
-<button class="tooltip" style="background-color: rgb(0, 77, 132); color: rgb(71, 196, 254);"> Pendant ce temps <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/multi%20task.png"></div><div class="div2"> Complément circonstanciel de temps et indication temporelle du complément du nom. Deux activités sont donc systématiquements menées de front. Chaque moment est utile à l'éducation : il y a une continuité des savoirs, ce qui prouve que le savoir se construit progressivement. </div></span></button>
+<div class="tooltip" style="background-color: rgb(0, 77, 132); color: rgb(71, 196, 254);"> Pendant ce temps <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/multi%20task.png"></div><div class="div2"> Complément circonstanciel de temps et indication temporelle du complément du nom. Deux activités sont donc systématiquements menées de front. Chaque moment est utile à l'éducation : il y a une continuité des savoirs, ce qui prouve que le savoir se construit progressivement. </div></span></div>
 
 , on lui répétait les leçons 
 
-<button class="tooltip" style="background-color: rgb(0, 77, 132); color: rgb(71, 196, 254);"> du jour précédent <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/multi%20task.png"></div><div class="div2"> Complément circonstanciel de temps et indication temporelle du complément du nom. Deux activités sont donc systématiquements menées de front. Chaque moment est utile à l'éducation : il y a une continuité des savoirs, ce qui prouve que le savoir se construit progressivement. </div></span></button>
+<div class="tooltip" style="background-color: rgb(0, 77, 132); color: rgb(71, 196, 254);"> du jour précédent <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/multi%20task.png"></div><div class="div2"> Complément circonstanciel de temps et indication temporelle du complément du nom. Deux activités sont donc systématiquements menées de front. Chaque moment est utile à l'éducation : il y a une continuité des savoirs, ce qui prouve que le savoir se construit progressivement. </div></span></div>
 
 . 
 
-<button class="tooltip" style="background-color: rgb(0, 132, 81); color: rgb(71, 254, 147);"> Lui-même <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rabelais.jpg"></div><div class="div2"> Utilisation du pronom de la troisième personne et de verbes qui indiquent l'organisation des apprentissages : La pédagogie des nouveaux maîtres est exposée : l'élève s'approprie le savoir avant d'en vérifier l'exactitude par lui-même. Fidèle à son courant littéraire Rabelais place toujours « l'être humain » au centre des préoccupations. </div></span></button>
+<div class="tooltip" style="background-color: rgb(0, 132, 81); color: rgb(71, 254, 147);"> Lui-même <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rabelais.jpg"></div><div class="div2"> Utilisation du pronom de la troisième personne et de verbes qui indiquent l'organisation des apprentissages : La pédagogie des nouveaux maîtres est exposée : l'élève s'approprie le savoir avant d'en vérifier l'exactitude par lui-même. Fidèle à son courant littéraire Rabelais place toujours « l'être humain » au centre des préoccupations. </div></span></div>
 
 les 
 
-<button class="tooltip" style="background-color: rgb(0, 132, 81); color: rgb(71, 254, 147);"> récitait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rabelais.jpg"></div><div class="div2"> Utilisation du pronom de la troisième personne et de verbes qui indiquent l'organisation des apprentissages : La pédagogie des nouveaux maîtres est exposée : l'élève s'approprie le savoir avant d'en vérifier l'exactitude par lui-même. Fidèle à son courant littéraire Rabelais place toujours « l'être humain » au centre des préoccupations. </div></span></button>
+<div class="tooltip" style="background-color: rgb(0, 132, 81); color: rgb(71, 254, 147);"> récitait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rabelais.jpg"></div><div class="div2"> Utilisation du pronom de la troisième personne et de verbes qui indiquent l'organisation des apprentissages : La pédagogie des nouveaux maîtres est exposée : l'élève s'approprie le savoir avant d'en vérifier l'exactitude par lui-même. Fidèle à son courant littéraire Rabelais place toujours « l'être humain » au centre des préoccupations. </div></span></div>
 
 ar cœur et il y 
 
-<button class="tooltip" style="background-color: rgb(0, 132, 81); color: rgb(71, 254, 147);"> appliquait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rabelais.jpg"></div><div class="div2"> Utilisation du pronom de la troisième personne et de verbes qui indiquent l'organisation des apprentissages : La pédagogie des nouveaux maîtres est exposée : l'élève s'approprie le savoir avant d'en vérifier l'exactitude par lui-même. Fidèle à son courant littéraire Rabelais place toujours « l'être humain » au centre des préoccupations. </div></span></button>
+<div class="tooltip" style="background-color: rgb(0, 132, 81); color: rgb(71, 254, 147);"> appliquait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rabelais.jpg"></div><div class="div2"> Utilisation du pronom de la troisième personne et de verbes qui indiquent l'organisation des apprentissages : La pédagogie des nouveaux maîtres est exposée : l'élève s'approprie le savoir avant d'en vérifier l'exactitude par lui-même. Fidèle à son courant littéraire Rabelais place toujours « l'être humain » au centre des préoccupations. </div></span></div>
 
 quelques cas pratiques, relatifs à 
 
-<button class="tooltip" style="background-color: rgb(0, 132, 81); color: rgb(71, 254, 147);"> l’être humain <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rabelais.jpg"></div><div class="div2"> Utilisation du pronom de la troisième personne et de verbes qui indiquent l'organisation des apprentissages : La pédagogie des nouveaux maîtres est exposée : l'élève s'approprie le savoir avant d'en vérifier l'exactitude par lui-même. Fidèle à son courant littéraire Rabelais place toujours « l'être humain » au centre des préoccupations. </div></span></button>
+<div class="tooltip" style="background-color: rgb(0, 132, 81); color: rgb(71, 254, 147);"> l’être humain <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/rabelais.jpg"></div><div class="div2"> Utilisation du pronom de la troisième personne et de verbes qui indiquent l'organisation des apprentissages : La pédagogie des nouveaux maîtres est exposée : l'élève s'approprie le savoir avant d'en vérifier l'exactitude par lui-même. Fidèle à son courant littéraire Rabelais place toujours « l'être humain » au centre des préoccupations. </div></span></div>
 
 . Ils écoutaient parfois 
 
-<button class="tooltip" style="background-color: rgb(99, 74, 0); color: rgb(254, 196, 71);"> pendant deux ou trois heures au moins <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/guliver.jpg"></div><div class="div2"> Les deux compléments circonstanciels de temps contrastent de manière ironique: Le temps consacré au savoir semble très conséquent à échelle humaine mais il est comiquement rapproché de celle du géant qui peut mettre plusieurs heures à s'habiller. L'ambiguïté attise la curiosité du lecteur. </div></span></button>
+<div class="tooltip" style="background-color: rgb(99, 74, 0); color: rgb(254, 196, 71);"> pendant deux ou trois heures au moins <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/guliver.jpg"></div><div class="div2"> Les deux compléments circonstanciels de temps contrastent de manière ironique: Le temps consacré au savoir semble très conséquent à échelle humaine mais il est comiquement rapproché de celle du géant qui peut mettre plusieurs heures à s'habiller. L'ambiguïté attise la curiosité du lecteur. </div></span></div>
 
 , mais d’ordinaire, ils cessaient 
 
-<button class="tooltip" style="background-color: rgb(99, 74, 0); color: rgb(254, 196, 71);"> lorsqu’il était complètement habillé <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/guliver.jpg"></div><div class="div2"> Les deux compléments circonstanciels de temps contrastent de manière ironique: Le temps consacré au savoir semble très conséquent à échelle humaine mais il est comiquement rapproché de celle du géant qui peut mettre plusieurs heures à s'habiller. L'ambiguïté attise la curiosité du lecteur. </div></span></button>
+<div class="tooltip" style="background-color: rgb(99, 74, 0); color: rgb(254, 196, 71);"> lorsqu’il était complètement habillé <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/guliver.jpg"></div><div class="div2"> Les deux compléments circonstanciels de temps contrastent de manière ironique: Le temps consacré au savoir semble très conséquent à échelle humaine mais il est comiquement rapproché de celle du géant qui peut mettre plusieurs heures à s'habiller. L'ambiguïté attise la curiosité du lecteur. </div></span></div>
 
 . 
 
@@ -431,7 +462,7 @@ quelques cas pratiques, relatifs à
 
 Puis, pendant trois bonnes heures, 
 
-<button class="tooltip"> on lui <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/dbz.jpg"></div><div class="div2"> Le sujet « on » renvoie au maître tandis que le pronom C.O.l. « lui » renvoie à Gargantua. Les rôles sont clairement distribués: le maître est entièrement disponible pour son élève. Celui-ci n'est pas actif; son attention doit cependant être totale. </div></span></button>
+<div class="tooltip"> on lui <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/dbz.jpg"></div><div class="div2"> Le sujet « on » renvoie au maître tandis que le pronom C.O.l. « lui » renvoie à Gargantua. Les rôles sont clairement distribués: le maître est entièrement disponible pour son élève. Celui-ci n'est pas actif; son attention doit cependant être totale. </div></span></div>
 
 faisait la lecture.
 
@@ -441,57 +472,57 @@ faisait la lecture.
 
 </br> </br>
 
-<button class="tooltip"> Cela fait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/brain%20hemlth.jpg"></div><div class="div2"> Verbe de mouvement et compléments circonstanciels de temps et de manière. Le mouvement vers l'extérieur signale une nouvelle étape dans le programme du géant mais l'exercice intellectuel n'est pas abandonné pour autant.</div></span></button>
+<div class="tooltip"> Cela fait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/brain%20hemlth.jpg"></div><div class="div2"> Verbe de mouvement et compléments circonstanciels de temps et de manière. Le mouvement vers l'extérieur signale une nouvelle étape dans le programme du géant mais l'exercice intellectuel n'est pas abandonné pour autant.</div></span></div>
 
 , ils sortaient, tout en devisant sur le sujet de cette lecture. Ils se rendaient au Grand Bracque 
 
-<button class="tooltip"> ou <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/plus%20de%20liberté.jpg"></div><div class="div2"> La conjonction de coordination oriente l'alternative vers une plus grande liberté dans l'espace. </div></span></button>
+<div class="tooltip"> ou <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/plus%20de%20liberté.jpg"></div><div class="div2"> La conjonction de coordination oriente l'alternative vers une plus grande liberté dans l'espace. </div></span></div>
 
 dans les prés, et ils jouaient à 
 
-<button class="tooltip"> la balle, à la paume, à la pile en triangle <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/goku%20krillin.jpg"></div><div class="div2"> L'énumération de jeux montre que la dimension ludique n'est pas éludée de la pédagogie. Il s'agit d'associer savoir et plaisir. </div></span></button>
+<div class="tooltip"> la balle, à la paume, à la pile en triangle <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/goku%20krillin.jpg"></div><div class="div2"> L'énumération de jeux montre que la dimension ludique n'est pas éludée de la pédagogie. Il s'agit d'associer savoir et plaisir. </div></span></div>
 
 , ils exerçaient avec élégance leur 
 
-<button class="tooltip" style="background-color: rgb(16, 3, 113); color: rgb(254, 196, 71);"> corps <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mena%20sana.jpg"></div><div class="div2"> L'antithèse traditionnelle entre le « corps » et l'« esprit » est contestée par la comparaison rapprochant ces deux termes. L'exercice de l'esprit et du corps forme un ensemble. Rabelais reprend ainsi de Juvénal, un auteur de l'antiquité, le principe du mens sana in corpore sano, un esprit sain dans un corps sain. </div></span></button>
+<div class="tooltip" style="background-color: rgb(16, 3, 113); color: rgb(254, 196, 71);"> corps <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mena%20sana.jpg"></div><div class="div2"> L'antithèse traditionnelle entre le « corps » et l'« esprit » est contestée par la comparaison rapprochant ces deux termes. L'exercice de l'esprit et du corps forme un ensemble. Rabelais reprend ainsi de Juvénal, un auteur de l'antiquité, le principe du mens sana in corpore sano, un esprit sain dans un corps sain. </div></span></div>
 
 , comme ils avaient auparavant
 
-<button class="tooltip" > exercé <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/milk.jpg"></div><div class="div2"> La subordonnée circonstancielle de comparaison associé au polyptote du verbe « exercé » montre que l'accent est mis sur la pratique et les activités; l'élève ne peut être passif. </div></span></button>
+<div class="tooltip" > exercé <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/milk.jpg"></div><div class="div2"> La subordonnée circonstancielle de comparaison associé au polyptote du verbe « exercé » montre que l'accent est mis sur la pratique et les activités; l'élève ne peut être passif. </div></span></div>
 
 leur 
 
-<button class="tooltip" style="background-color: rgb(16, 3, 113); color: rgb(254, 196, 71);"> esprit <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mena%20sana.jpg"></div><div class="div2"> L'antithèse traditionnelle entre le « corps » et l'« esprit » est contestée par la comparaison rapprochant ces deux termes. L'exercice de l'esprit et du corps forme un ensemble. Rabelais reprend ainsi de Juvénal, un auteur de l'antiquité, le principe du mens sana in corpore sano, un esprit sain dans un corps sain. </div></span></button>
+<div class="tooltip" style="background-color: rgb(16, 3, 113); color: rgb(254, 196, 71);"> esprit <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/mena%20sana.jpg"></div><div class="div2"> L'antithèse traditionnelle entre le « corps » et l'« esprit » est contestée par la comparaison rapprochant ces deux termes. L'exercice de l'esprit et du corps forme un ensemble. Rabelais reprend ainsi de Juvénal, un auteur de l'antiquité, le principe du mens sana in corpore sano, un esprit sain dans un corps sain. </div></span></div>
 . 
 
 </br> </br>
 
 Tous leurs 
 
-<button class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> jeux <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></button>
+<div class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> jeux <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></div>
 
 ne se faisaient qu’en liberté car ils abandonnaient 
 
-<button class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> la partie <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></button>
+<div class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> la partie <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></div>
 
 quand il leur 
 
-<button class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> plaisait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></button>
+<div class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> plaisait <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></div>
 
 .
 
 En règle générale, ils cessaient lorsque leurs corps étaient en 
 
-<button class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> sueur <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></button>
+<div class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> sueur <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></div>
 
 ou que, pour une raison ou une autre, ils étaient 
 
-<button class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> las <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></button>
+<div class="tooltip" style="background-color: rgb(177, 0, 0); color: rgb(254, 196, 71);"> las <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-3-L-eduaction-humaniste/main/effort%20happy.jpg"></div><div class="div2"> Le lexique du jeu est associé à celui du plaisir mais aussi de l'effort. Le jeu et la liberté constituent d'autres apprentissages mais restent associés à l'idée d'exercice et de rigueur. </div></span></div>
 
 . 
 
   
- </p>
+ </div>
  
  <p class="légende">
  Gargantua, Rabelais, 1534, Chapitre 23 
@@ -518,9 +549,9 @@ ou que, pour une raison ou une autre, ils étaient
 </p>
 
 
- <button class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
+ <div class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
     Procédés Littéraires et Stylistiques = 25
-</button>
+</div>
 
 <p class="texte">
 
@@ -543,14 +574,14 @@ ou que, pour une raison ou une autre, ils étaient
     </h6>
     <div class="source">
 
-      <div>
-        <img class="logo_akatsuki" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png">
+      <div class="intro_div">
+        <a href="https://arjunak07.github.io/Accueil-Premiere/"> <img class="logo_akatsuki" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"> </a>
       </div>
     
-      <div class="div2">
+      <div class="outro_div">
         <span class="OUTRO">
           FAIT PAR L'AKATSUKI DES CODEURS, PROPULSÉ PAR LE LYCÉE ANDRÉ MALRAUX
-      </span>
+        </span>
       </div>
       
     </div>
